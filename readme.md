@@ -18,3 +18,20 @@ docker run -it --name dataonly dataonly
 docker-compose up -d
 ```
 
+
+以下のURLで管理画面を表示できる
+
+[http://localhost:55580/wp-admin](http://localhost:55580/wp-admin)
+
+
+コンテナ群の停止
+
+```
+docker-compose stop
+```
+
+コンテナ群の削除
+
+```
+docker-compose rm
+```

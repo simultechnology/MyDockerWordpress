@@ -3,10 +3,10 @@ webserver:
   image: wordpress
 
   ports:
-    - "80:80"
+    - "55580:80"
 
   volumes:
-    - "$PWD/html:/var/www/html"
+    - "$PWD/wordpress:/var/www/html"
 
   links:
     - "dbserver:mysql"
