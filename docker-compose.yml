@@ -1,0 +1,22 @@
+
+webserver:
+  image: wordpress
+
+  ports:
+    - "80:80"
+
+  volumes:
+    - "$PWD/html:/var/www/html"
+
+  links:
+    - "dbserver:mysql"
+
+dbserver:
+  image: mysql
+
+  volumes_from:
+    - dataonly
+
+  environment:
+    MYSQL_ROOT_PASSWORD: password
+
