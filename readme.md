@@ -24,6 +24,11 @@ docker-compose up -d
 [http://localhost:55580/wp-admin](http://localhost:55580/wp-admin)
 
 
+管理画面が立ち上がった時にwordpressアドレスとサイトアドレスが[http://localhost:55580/wp-admin](http://localhost:55580/wp-admin)になっていない場合、以下の用に修正する
+
+![wp-admin](img/wp-admin.png)
+
+
 コンテナ群の停止
 
 ```
