@@ -1,5 +1,7 @@
 # DockerによるWordpress構築について
 
+## 1. 起動について
+
 データを保存するデータ専用コンテナを作成する。Dockerfileに記述されているので、buildを行う。
 
 ```
@@ -27,6 +29,12 @@ docker-compose up -d
 管理画面が立ち上がった時にwordpressアドレスとサイトアドレスが[http://localhost:55580/wp-admin](http://localhost:55580/wp-admin)になっていない場合、以下の用に修正する
 
 ![wp-admin](img/wp-admin.png)
+
+## 2. ファイルの共有について
+
+ホストのsqls以下にあるファイルをdbserverの/tmp/sqlsというディレクトリで参照できる
+
+## 3. 停止、削除について
 
 
 コンテナ群の停止

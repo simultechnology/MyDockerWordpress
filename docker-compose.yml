@@ -17,6 +17,9 @@ dbserver:
   volumes_from:
     - dataonly
 
+  volumes:
+    - "$PWD/sqls:/tmp/sqls"
+
   environment:
     MYSQL_ROOT_PASSWORD: password
 
